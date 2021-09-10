@@ -4,14 +4,15 @@ import dart.math;
 void main() {
     double a, b, c, delta;
 
-    print("Calculando delata");
-    print("Qual o valor de A");
+    print("--- Equação do segundo grau ---\n");
+    print("Calculando delta\n");
+    print("Informe o valor de A");
     a = double.parse(stdin.readLineSync()!);
 
-    print("Qual o valor de B");
+    print("Informe o valor de B\n");
     b = double.parse(stdin.readLineSync()!);
 
-    print("Qual o valor de C");
+    print("Informe o valor de C\n");
     c = double.parse(stdin.readLineSync()!);
 
     delta = getDelta(a, b, c);
@@ -24,7 +25,7 @@ void main() {
         return
     }
 
-    print("Não existem raízes pois Delta é menor que zero!");
+    print("Delta menor que zero, não existem raízes!");
 
 }
 

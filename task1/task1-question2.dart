@@ -1,7 +1,5 @@
-/*
- * Exercício 1 Questão 2
- * Escrever e Ler uma matriz de inteiros
- */
+
+import 'dart:io';
 
 void main() {
     
@@ -13,6 +11,7 @@ void main() {
 
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
+            print("Informe o valor pra linha $i da coluna $j!\n");
             array[i][j] = int.parse(stdin.readLineSync()!);
         }
     }
